@@ -13,7 +13,9 @@ target = open(filename, 'w')
 
 print("Truncating the file, Goodbye!")
 target.truncate()
-
+# truncating here is not useful because when open with 'w'
+# file is already truncated
+#truncated means to resize file to given bytes
 print("Now I'm going to ask you for three lines.")
 
 line1 = input("line 1: ")
